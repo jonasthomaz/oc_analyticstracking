@@ -1,0 +1,14 @@
+<modification>
+	<id>Google Analytics</id>
+	<version>1.0</version>
+	<vqmver>2.1.6</vqmver>
+	<author>Oficina do Pixel</author>
+		
+	<file name="catalog/controller/common/header.php">
+		<operation>
+			<search position="before"><![CDATA[$this->render();]]></search>
+			<add><![CDATA[$this->children[]= 'module/google_analytics';  ]]></add>
+		</operation>
+	</file>
+
+</modification>
